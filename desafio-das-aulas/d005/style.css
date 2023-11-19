@@ -1,0 +1,10 @@
+body{
+    background-color: darkslategrey;
+    font-size:larger;
+}
+li :visited{
+    color: darkred;
+}
+li:hover{
+    text-decoration: underline;
+}

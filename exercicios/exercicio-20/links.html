@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personalizando links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: goldenrod;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: darkgoldenrod;
+        }
+        a:hover{
+            color: black;
+            text-decoration: none;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial{
+            background-color: rgb(217, 155, 243);
+            color: rgb(169, 243, 181);
+        }
+        .especial::before{
+            content: "⇒";
+        }
+        .especial::after{
+            content: "⇐";
+        }
+    </style>
+</head>
+<body>
+    <li><a target="_blank" href="https://github.com/Felippe-nobre/Felippe-nobre" class="especial">repositório github</a></li>
+    <li><a target="_blank" href="https://www.instagram.com/nobre.felippe/" class="especial">instagram</a></li>
+    <li><a target="_blank" href="https://open.spotify.com/user/q103ixf7czb71g1osxhgw879m?si=dfc0c4c16876441a">spotfiy</a></li>
+</body>
+</html>
