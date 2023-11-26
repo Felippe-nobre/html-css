@@ -13,7 +13,6 @@ body{
 }
 #q1{
     background-color: skyblue;
-    animation: 1s;
 }
 #q2{
     background-image: linear-gradient(to bottom,yellow,red);
