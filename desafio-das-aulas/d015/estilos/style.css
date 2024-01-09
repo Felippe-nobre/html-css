@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
+    background: url('../imagens/fundo-tela.webp') no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -34,7 +34,7 @@ section#telefone {
     background: url('../imagens/frame-iphone.png') no-repeat;
 }
 
-iframe#tela {
+#tela {
     position: relative;
     top: 80px;
     left: 22px;
@@ -42,11 +42,11 @@ iframe#tela {
     height: 471px;
 }
 
-section#redes-sociais {
+#redes-sociais {
     text-align: right;
 }
 
-section#redes-sociais img {
+#redes-sociais img {
     width: 50px;
     margin: 10px;
     border-radius: 50%;
@@ -54,7 +54,7 @@ section#redes-sociais img {
     box-sizing: border-box;
 }
 
-section#redes-sociais img:hover {
+#redes-sociais img:hover {
     border: 2px solid rgba(255, 255, 255, 0.637);
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
