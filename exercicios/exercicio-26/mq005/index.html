@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
-    
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu site</h1>
+        <i id="hamburger" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia sequi reprehenderit asperiores necessitatibus unde doloribus beatae fuga. At aliquam labore voluptates sunt maiores est doloribus voluptatem odio in animi. Ut.
+            Labore minima consectetur, laboriosam alias sed provident ea assumenda velit, veritatis nemo perferendis ut libero cumque suscipit. Vero ipsa blanditiis atque, obcaecati hic, amet ea veritatis aperiam vitae, necessitatibus in!
+            Tempore optio iste recusandae amet officia nobis odit quam, molestias, quae itaque fugiat quo? Perferendis similique excepturi reprehenderit corrupti officia, neque omnis illo quaerat accusantium repudiandae ea, quasi nihil ex.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ad id repellat, neque pariatur dolores maxime impedit tenetur nam ipsa sunt, natus obcaecati ut alias corrupti, dignissimos optio nesciunt eos!
+            Aperiam reiciendis ipsum exercitationem autem totam beatae iste numquam cumque! Itaque fugiat consequatur debitis pariatur recusandae eum consectetur minima. Adipisci ut distinctio nisi at enim incidunt perspiciatis accusantium illo doloribus?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque odit, omnis exercitationem non veritatis eos voluptatum libero, illum quas eligendi dolore suscipit expedita optio voluptatem molestiae est quod ex fugiat!
+            Quibusdam hic eum soluta error, tempore delectus suscipit, praesentium cumque illum ex, ducimus qui itaque quas omnis! Deleniti dolorem tempore aliquam officia earum fuga reprehenderit, perferendis deserunt rem maxime adipisci?</p>
+
+        </article>
+    </main>
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else{
+                itens.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>
